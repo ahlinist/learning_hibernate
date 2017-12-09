@@ -10,7 +10,7 @@ public class Message {
     private Long id;
     private String text;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     private Message nextMessage;
 
     public Message() {
